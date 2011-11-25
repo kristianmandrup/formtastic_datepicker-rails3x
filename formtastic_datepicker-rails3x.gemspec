@@ -1,12 +1,12 @@
 Gem::Specification.new do |s|
-  s.name = %q{formtastic_datepicker_inputs}
+  s.name = %q{formtastic_datepicker-rails3x}
   s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Alan Harper"]
-  s.date = %q{2010-11-30}
+  s.authors = ["Kristian Mandrup"]
+  s.date = %q{2011-11-25}
   s.description = %q{Use jQuery UI's date picker with formtastic easily}
-  s.email = %q{alan@appfission.com}
+  s.email = %q{kmandrup@gmail.com}
   s.extra_rdoc_files = [
     "README.mdown"
   ]
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "init.rb"
   ]
-  s.homepage = %q{http://github.com/aussiegeek/formtastic_datepicker_inputs}
+  s.homepage = %q{http://github.com/kristianmandrup/formtastic_datepicker-rails3x}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
