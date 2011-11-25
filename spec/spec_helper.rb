@@ -19,7 +19,7 @@ require 'rspec_tag_matchers'
 # in ./support/ and its subdirectories.
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 
-require 'formtastic_datepicker_inputs'
+require 'formtastic_datepicker-rails3x'
 
 RSpec.configure do |config|
   config.include RspecTagMatchers

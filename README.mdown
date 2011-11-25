@@ -1,4 +1,4 @@
-# Formtastic Datepicker Inputs
+# Formtastic Datepicker for Rails 3.x
 
 This plugin is based on a blog post by 
 [Grzegorz Brzezinka]:(http://blog.brzezinka.eu/webmaster-tips/ruby/ruby-on-rails-formtastic-jquery-ui-datepicker)
@@ -45,6 +45,14 @@ Put this in your `application.js` or some other js file.
 In the Gemfile add this gem after _ActiveAdmin_ (`gem 'active_admin'`) to make sure it loads after and overrides/extends ActiveAdmin appropriately.
 
 The ActiveAdmin extensions can be found in `lib/active_admin` in this project.
+
+## Install
+
+Insert into Gemfile:
+
+`gem 'formtastic_datepicker-rails3x', :git => 'git://github.com/kristianmandrup/formtastic_datepicker-rails3x.git'`
+
+This gem will likely soon be released to RubyGems ;)
 
 ## Development Environment
 
