@@ -339,4 +339,3 @@ module FormtasticDatepickerInputsSpecHelper
 end
 
 ::ActiveSupport::Deprecation.silenced = false
-

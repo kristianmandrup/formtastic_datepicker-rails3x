@@ -1,4 +1,5 @@
 # FormtasticDatepickerInputs
+# FormtasticDatepickerInputs
 module Formtastic::Inputs
 
   class DatePickerInput < Formtastic::Inputs::StringInput
@@ -37,9 +38,7 @@ module Formtastic::Inputs
     def css_class
       "ui-datetime-picker"
     end
-
   end
-
 end
 
 require 'active_admin/inputs' if defined?(ActiveAdmin)
