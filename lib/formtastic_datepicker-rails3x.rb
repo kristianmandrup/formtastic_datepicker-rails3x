@@ -1,44 +1,5 @@
 # FormtasticDatepickerInputs
-# FormtasticDatepickerInputs
-module Formtastic::Inputs
+require 'formtastic/date_picker_input'
+require 'formtastic/datetime_picker_input'
 
-  class DatePickerInput < Formtastic::Inputs::StringInput
-
-    def to_html
-      input_wrapping do
-        label_html <<
-          builder.text_field(input_name, input_html_options)
-      end
-    end
-
-    def format
-      input_options[:format] || '%d %b %Y'
-    end
-
-    def value
-      input_options[:value] || object.send(method).try(:strftime, format)
-    end
-
-    def css_class
-      "ui-date-picker"
-    end
-
-    def input_html_options
-      new_class = [super[:class], css_class].compact.join(" ")
-      super.update(:class => new_class, :value => value)
-    end
-  end
-
-  class DateTimePickerInput < Formtastic::Inputs::DatePickerInput
-
-    def format
-      input_options[:format] || '%d %b %Y %H:%M'
-    end
-
-    def css_class
-      "ui-datetime-picker"
-    end
-  end
-end
-
-require 'active_admin/inputs' if defined?(ActiveAdmin)
+require 'active_admin/extensions' if defined?(ActiveAdmin)
